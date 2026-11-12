@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body style="background-color:#00A7E1;">
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color:#00A7E1;">
 
-  <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SOME<br>NAME</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+    <!-- SideBar -->
+    <div class="sidebar">
+      <center>
+        <h1 style="color:#EBEBEB">Jack Usher</h1>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">4th Option</a>
+      </center>
+    </div>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SOME NAME</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
+    <!-- Page Content -->
+    <div class="main">
+      <center>
+        <h1 style="color:#EBEBEB;">Portfolio</h1>
+        <img src="/images/itchio-logo-textless-black.png" width="25" height="25" alt="Itch Logo">
+        <a href="https://jackmygooman.itch.io/" style="color:#FFA630;"> <b>Itch</b></a>
+        <img src="" width="25" height="25" alt="LinkedIn Logo">
+        <a href="" style="color:#FFA630;"> <b>LinkedIn</b></a>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        <style>
+          .container {
+            display: flex;
+          }
+          .container div {
+            width: 33%;
+          }
+        </style>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-
-<center>
-<h1 style="color:#EBEBEB;">Jack Usher Portfolio</h1>
-<img src="/images/itchio-logo-textless-black.png" width="25" height="25" alt="Itch Logo">
-<a href="https://jackmygooman.itch.io/" style="color:#FFA630;"> <b>Itch</b></a>
-<img src="" width="25" height="25" alt="LinkedIn Logo">
-<a href="" style="color:#FFA630;"> <b>LinkedIn</b></a>
-</center>
-
-
-</body>
+        <div class="container">
+          <div><h2>Portfolio</h2><p>My work!</p></div>
+          <div><h2>poopy</h2><p>Oslo is...</p></div>
+          <div><h2>Rome</h2><p>Rome is...</p></div>
+        </div>
+      </center> 
+    </div>
+  </body>
 </html>
  
